@@ -196,3 +196,73 @@ textarea{
     justify-content: center;
     align-items: center;
 }
+
+/*responsive*/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    :root{
+        font-size: 8px;
+    }
+    .main-container{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 7% 30% 5% 5% 30% 7%;
+        grid-template-areas:
+        "logo title"
+        "mainbox mainbox"
+        "alert alert"
+        "btn1 btn2"
+        "secbox secbox"
+        "foot foot";
+    }
+    .mc-item1{grid-area: logo; height: 50%;}
+    .mc-item2{grid-area: title;}
+    .mc-item3{grid-area: mainbox;}
+    .mc-item4{grid-area: alert; font-size: 1.5rem;}
+    .mc-item5{grid-area: btn1;}
+    .mc-item6{grid-area: btn2;}
+    .mc-item7{grid-area: secbox;}
+    .sc-item2{height: 50%;width: auto;}
+    .sc-item0{height: 90%;}
+    .sc-item1{padding: 1.5rem 1rem .2rem 1rem;}
+    .sc-item3{font-size: 1.5rem}
+    #text1-nested{font-size: 2rem;}
+    .sc-item4{height: 80%;}
+    .copyr{grid-area: foot;font-size: 1.5rem;}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    :root{
+        font-size: 12px;
+    }
+    .main-container{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% 30% 5% 5% 30% 7%;
+        grid-template-areas:
+        "logo title"
+        "mainbox mainbox"
+        "alert alert"
+        "btn1 btn2"
+        "secbox secbox"
+        "foot foot";
+    }
+    .mc-item1{grid-area: logo; height: 50%;}
+    .mc-item2{grid-area: title;}
+    .mc-item3{grid-area: mainbox;}
+    .mc-item4{grid-area: alert; font-size: 1.5rem;}
+    .mc-item5{grid-area: btn1;}
+    .mc-item6{grid-area: btn2;}
+    .mc-item7{grid-area: secbox;}
+    .sc-item2{height: 50%;width: auto;}
+    .sc-item0{height: 90%;}
+    .sc-item1{padding: 1.5rem 1rem .2rem 1rem;}
+    .sc-item3{font-size: 1.2rem}
+    #text1-nested{font-size: 2rem;}
+    .sc-item4{height: 80%;}
+    .copyr{grid-area: foot;font-size: 1rem;}
+  }
